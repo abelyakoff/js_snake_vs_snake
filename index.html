@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>Snake vs. Snake</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+  </head>
+
+  <body>
+
+    <header class="title">
+      <h1>Snake vs. Snake</h1>
+    </header>
+
+    <main>
+
+      <div class="outer-container">
+
+        <div class="inner-container">
+
+          <div class="scoreboards">
+
+            <h2>TOP SCORE: <span id="top-score">0</span></h2>
+
+            <div class="current-scores">
+
+              <div class="red-scoreboard">
+                <h2>Score: <span id="red-score">0</span></h2>
+                <h2>Rounds won: <span id="red-won">0</span></h2>
+              </div>
+
+              <div class="blue-scoreboard">
+                <h2>Score: <span id="blue-score">0</span></h2>
+                <h2>Rounds won: <span id="blue-won">0</span></h2>
+              </div>
+
+            </div> <!-- current-scores -->
+
+          </div> <!-- scoreboards -->
+
+          <div class="instructions">
+
+            <h3>Instructions</h3>
+
+            <p>The goal of the game is to win <span id="round-num">0</span> <strong>rounds</strong> against your opponent.</p>
+
+            <p>You <strong>win</strong> a round as soon as your score is <span id="score-diff">0</span> points higher than your opponent's score.</p>
+
+            <p>You <strong>lose</strong> (and your opponent wins) a round when your snake <strong>collides</strong> with itself, the opponent's snake or one of the walls.</p>
+
+            <p>You gain points by eating <strong>apples</strong> that randomly appear in the game area. To eat an apple the snake needs to <strong>run over</strong> it. When you eat an apple, the snake <strong>grows</strong> and the game speed <strong>increases</strong>.</p>
+
+            <p>The red snake is controlled by the <strong>WASD</strong> keys, and the blue snake is controlled by the <strong>arrow keys</strong> on the keyboard.</p>
+
+            <p>Press the button below to start a new game.</p>
+
+          </div> <!-- instructions -->
+
+          <button id="start-button">Start game</button>
+
+        </div> <!-- inner-container -->
+
+        <div class="game-area">
+
+          <div class="game-board"></div>
+
+        </div> <!-- game-area -->
+
+      </div> <!-- outer-container -->
+
+    </main>
+
+    <footer>
+      <p>&copy; Alexander Belyakov 2020</p>
+      <p>Inspired by JavaScript Snake project on <a href="https://scrimba.com" target="_blank">Scrimba</a></p>
+    </footer>
+
+    <script src="js/snake_vs_snake.js"></script>
+
+  </body>
+
+</html>

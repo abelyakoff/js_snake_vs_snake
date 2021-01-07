@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Quicksand, Helvetica, Arial, sans-serif;
+}
+
+header {
+  background-color: #037;
+  padding: 1.5em;
+}
+
+strong {
+  color: darkorange;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 3em;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+main {
+  background-color: beige;
+}
+
+.outer-container {
+  display: flex;
+  align-items: center;
+}
+
+.inner-container {
+  width: 30%;
+  text-align: center;
+  padding: 1em;
+}
+
+.scoreboards {
+  background-color: burlywood;
+  border-radius: 15px;
+  box-shadow: 5px 5px 7px #333;
+  padding: 1em;
+}
+
+.scoreboards h2 {
+  font-size: 1.8em;
+}
+
+.current-scores {
+  display: flex;
+  justify-content: center;
+}
+
+.red-scoreboard {
+  background-color: indianred;
+}
+
+.blue-scoreboard {
+  background-color: blue;
+}
+
+.red-scoreboard, .blue-scoreboard {
+  border-radius: 15px;
+  box-shadow: 5px 5px 7px #333;
+  padding: 1.5em;
+  margin: 0.5em auto;
+}
+
+.red-scoreboard h2, .blue-scoreboard h2 {
+  font-size: 1.5em;
+  color: white;
+  text-align: center;
+}
+
+.instructions h3 {
+  font-size: 2em;
+  color: #003377;
+  margin: 0.7em;
+}
+
+.instructions p {
+  font-size: 1.1em;
+  margin: 0.7em;
+  color: black;
+  text-align: left;
+}
+
+#start-button {
+  position: relative;
+  font-family: Quicksand, Helvetica, Arial, sans-serif;
+  font-size: 1.5em;
+  background-color: darkorange;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 25px;
+  padding: 0.5em 1em;
+  margin: 1.5em 0;
+  border: none;
+  box-shadow: 5px 5px 7px #333;
+  outline: none;
+}
+
+#start-button:hover {
+  background-color: orange;
+}
+
+#start-button:active {
+  background-color: orange;
+  box-shadow: 1px 1px 7px #333;
+  top: 4px;
+  left: 4px;
+}
+
+.game-area {
+  width: 70%;
+  padding: 2em;
+}
+
+.game-board {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  border: solid 20px burlywood;
+}
+
+.red-snake {
+  background-color: indianred;
+}
+
+.blue-snake {
+  background-color: blue;
+}
+
+.apple {
+  background-color: green;
+}
+
+footer {
+  background-color: #333;
+  padding: 1em;
+}
+
+footer p {
+  font-size: 1em;
+  color: #DDD;
+  text-align: right;
+}
+
+a {
+  color: darkorange;
+  font-weight: bold;
+  text-decoration: none;
+}
